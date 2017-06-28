@@ -5,7 +5,6 @@ import { SharedModule } from '../shared';
 
 import { StaticRoutingModule } from './static-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FeaturesComponent } from './features/features.component';
 
 @NgModule({
   imports: [
@@ -14,8 +13,7 @@ import { FeaturesComponent } from './features/features.component';
     StaticRoutingModule
   ],
   declarations: [
-    DashboardComponent,
-    FeaturesComponent
+    DashboardComponent
   ]
 })
 export class StaticModule { }
