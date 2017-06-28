@@ -6,23 +6,25 @@ import { SettingsComponent } from './settings';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'about',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
-  }, {
+  },
+  {
     path: 'settings',
     component: SettingsComponent
-  }, {
+  },
+  {
     path: 'examples',
     loadChildren: 'app/examples/examples.module#ExamplesModule',
-  }, {
+  },
+  {
     path: '**',
-    redirectTo: 'about'
+    redirectTo: 'dashboard'
   }
 ];
 
 @NgModule({
-  // useHash supports github.io demo page, remove in your app
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

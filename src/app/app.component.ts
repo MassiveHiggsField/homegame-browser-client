@@ -19,7 +19,7 @@ export class AppComponent implements OnDestroy {
 
   logo = require('../assets/logo.png');
   navigation = [
-    { link: 'about', label: 'About' },
+    { link: 'dashboard', label: 'Dashboard' },
     { link: 'features', label: 'Features' },
     { link: 'examples', label: 'Examples' },
   ];

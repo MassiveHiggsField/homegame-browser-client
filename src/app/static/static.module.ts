@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared';
 
 import { StaticRoutingModule } from './static-routing.module';
-import { AboutComponent } from './about/about.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { FeaturesComponent } from './features/features.component';
 
 @NgModule({
@@ -14,7 +14,7 @@ import { FeaturesComponent } from './features/features.component';
     StaticRoutingModule
   ],
   declarations: [
-    AboutComponent,
+    DashboardComponent,
     FeaturesComponent
   ]
 })
